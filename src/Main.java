@@ -35,12 +35,7 @@ public class Main {
                     System.out.println("Wojownikowi " + wojownik2.getName() + " zostalo " + wojownik2.getHealth());
                     break;
                 case "2":
-                    try {
-                        wojownik1.setWeapon(sword);
-                    } catch (Exception e)
-                    {
-                        System.out.println("nie");
-                    }
+                    wojownik1.setWeapon(sword);
 
                     System.out.println("Podniesiono bron: " + sword.getName());
                     System.out.println("Twoje obrazenia wzrosly o " + wojownik1.getWeapon().getDamage() + " i wynosza: " + wojownik1.getDamage());

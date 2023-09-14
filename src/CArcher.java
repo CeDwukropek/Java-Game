@@ -19,7 +19,8 @@ public class CArcher extends CWarior {
         }
     }
 
-    public void setWeapon(CBow weapon) {
+    @Override
+    public void setWeapon(CWeapon weapon) {
         if(this.getWeapon() == null) this.setWeapon(weapon);
     }
 }

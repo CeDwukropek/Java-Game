@@ -34,5 +34,6 @@ public abstract class CWarior implements IBase {
         }
     }
 
+    abstract public void setWeapon(CWeapon weapon);
     public CWeapon getWeapon() { return this.weapon; }
 }
