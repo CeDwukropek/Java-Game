@@ -12,14 +12,17 @@ public abstract class CWeapon implements IBase {
         this.equiped = equiped;
         this.range = range;
     }
+
+    abstract public int getDispersion();
+    public void equip() { this.equiped = true; }
+    public void unEquip() { this.equiped = false; }
+    public float getDamage() { return this.damage; }
+    public String getName() { return this.name; }
+    public boolean getEquipped() { return this.equiped; }
+    public boolean getUpgradeable() { return this.upgradeable; }
     public boolean upgradeWeapon(float amount) {
         if(!upgradeable) return false;
         this.damage += amount;
         return true;
     }
-    public float getDamage() { return this.damage; }
-    public String getName() { return this.name; }
-    public void isEquiped(boolean x) { this.equiped = x; }
-
-    abstract public int getDispersion();
 }
